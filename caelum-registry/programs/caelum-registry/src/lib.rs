@@ -38,6 +38,7 @@ pub mod caelum_registry {
             credit_amount,
             status: ProjectStatus::Available,
             ipfs_hash,
+            mint_address: ctx.accounts.verifier.key(),
         });
 
         Ok(())
@@ -119,6 +120,8 @@ pub struct CarbonProject {
     pub credit_amount: u64,
     pub status: ProjectStatus,
     pub ipfs_hash: String,
+    pub mint_address: Pubkey,
+
 }
 
 #[derive(Clone, AnchorSerialize, AnchorDeserialize, PartialEq)]
