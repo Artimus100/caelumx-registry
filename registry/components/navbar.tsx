@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Leaf } from "lucide-react";
+import Logo from "@/components/assets/Logo.svg";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -10,8 +10,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Leaf className="h-6 w-6 text-green-600" />
-            <span className="font-semibold text-xl">Carbon Registry</span>
+          <img src={Logo.src} alt="Logo" className="mr-8 h-10 w-10" />
+            <span className="font-semibold text-xl">Caelum Registry</span>
           </Link>
           
           <div className="flex space-x-4">

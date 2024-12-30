@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Leaf, Shield, Search } from "lucide-react";
 import Link from "next/link";
+import Logo from "@/components/assets/Logo.svg";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/submit">
             <Button className="w-full sm:w-auto" size="lg">
-              <Leaf className="mr-2 h-5 w-5" />
-              Register Project
+            <img src={Logo.src} alt="Logo" className="mr-2 h-5 w-5" />
+            Register Project
             </Button>
           </Link>
           <Link href="/verify">
@@ -38,7 +39,7 @@ export default function Home() {
       <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div className="relative bg-white p-6 rounded-lg shadow-sm border">
           <div className="absolute top-6 left-6">
-            <Leaf className="h-6 w-6 text-green-600" />
+          <img src={Logo.src} alt="Logo" className="mr-2 h-5 w-5" />
           </div>
           <h3 className="mt-8 text-lg font-semibold">Register Projects</h3>
           <p className="mt-2 text-gray-600">
