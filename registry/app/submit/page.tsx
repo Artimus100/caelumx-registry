@@ -23,11 +23,11 @@ import {
 import { toast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
-  projectName: z.string().min(2).max(100),
-  projectType: z.string(),
-  region: z.string(),
-  vintageYear: z.string(),
-  certificationBody: z.string(),
+  projectName: z.string().min(2, "Project name must be at least 2 characters").max(100),
+  projectType: z.string().min(1, "Please select a project type"),
+  region: z.string().min(1, "Region is required"),
+  vintageYear: z.string().regex(/^\d{4}$/, "Must be a valid year"),
+  certificationBody: z.string().min(1, "Certification body is required"),
   creditAmount: z.string().regex(/^\d+$/, "Must be a valid number"),
 });
 
@@ -46,16 +46,29 @@ export default function SubmitPage() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      // TODO: Implement IPFS upload and Solana contract interaction
-      console.log(values);
+      const response = await fetch("/api/submit-project", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit project. Please try again.");
+      }
+
       toast({
         title: "Project submitted successfully",
         description: "Your project is now pending verification.",
       });
+
+      form.reset();
     } catch (error) {
+      console.error(error);
       toast({
         title: "Error submitting project",
-        description: "Please try again later.",
+        description: (error instanceof Error ? error.message : "Please try again later."),
         variant: "destructive",
       });
     }
@@ -67,7 +80,7 @@ export default function SubmitPage() {
         <div>
           <h1 className="text-2xl font-semibold">Submit Carbon Credit Project</h1>
           <p className="text-gray-600 mt-2">
-            Fill in the details of your carbon credit project for verification
+            Fill in the details of your carbon credit project for verification.
           </p>
         </div>
 
@@ -167,7 +180,9 @@ export default function SubmitPage() {
               )}
             />
 
-            <Button type="submit" className="w-full">Submit Project</Button>
+            <Button type="submit" className="w-full">
+              Submit Project
+            </Button>
           </form>
         </Form>
       </div>
