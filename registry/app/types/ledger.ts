@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 // Core types for the ledger system
-export type TransactionType = 'purchase' | 'sale' | 'offset' | 'verification';
+export type TransactionType = 'purchase' | 'sale' | 'offset' | 'verification' |'purchase' | 'transfer';
 export type CreditStatus = 'pending' | 'verified' | 'available' | 'retired';
 export type UserRole = 'user' | 'verifier' | 'admin';
 

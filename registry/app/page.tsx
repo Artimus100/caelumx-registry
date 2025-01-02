@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../app/components/ui/button";
 import { Leaf, Shield, Search } from "lucide-react";
 import Link from "next/link";
-import Logo from "@/components/assets/Logo.svg";
+import Logo from "../app/components/assets/Logo.svg";
 
 export default function Home() {
   return (

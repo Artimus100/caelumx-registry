@@ -1,21 +1,21 @@
 'use client'
-import FatCactus from '../../public/images/FatCactus.png'
+import FatCactus from '../public/images/FatCactus.png'
 
-import {  Anton,  } from 'next/font/google'
+import { Anton } from 'next/font/google'
 import { useState } from 'react';
-import DropDown from "../components/DropDown";
-import { Card } from '../components/Cards'
+import DropDown from "./DropDown";
+import { Card } from './Cards'
 import { projects } from '../data/projects';
 import { motion } from 'framer-motion'
-import { PrimaryNavBar } from '../components/PrimaryNavBar';
+
 const anton = Anton({
     subsets: ['latin'], // Include the appropriate subsets
     weight: '400', // Specify the font weight if necessary
     display: 'swap',
-  });       
+  });
 
 
-export default function Market  ()  {
+ const  Market= () => {
     const [token, setToken] = useState('All')
     const [country, setCountry] = useState('India')
     const [vintage, setVintage] = useState('2025')
@@ -23,8 +23,8 @@ export default function Market  ()  {
 
 
     return (
-        <div className='w-full p-4 overflow-hidden h-screen bg-zinc-950 flex'>
-        <div><PrimaryNavBar/></div>
+        <div>
+
         <div className="w-full flex flex-col justify-between items-start rounded-2xl pb-4 px-6 bg-[#232228] h-f mt-4 outline outline-[1.5px] outline-white/20">
             <div className='  flex w-full flex-col '>
                 <h3 className={`tracking-tight mt-2 p-1 ${anton.className}  uppercase font-extrabold   text-4xl text-[#CDCDCD]`}>Manage Carbon Credit</h3>
@@ -58,3 +58,4 @@ export default function Market  ()  {
         </div>
     )
 }
+export default Market;

@@ -1,16 +1,16 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+} from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 import { CheckCircle, XCircle } from "lucide-react";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "../components/ui/use-toast";
 
 // Mock data - replace with actual data fetching
 const mockProjects = [

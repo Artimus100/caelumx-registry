@@ -1,10 +1,28 @@
 'use client';
 import React from 'react';
-import { TransactionList } from '../../components/TransactionList';
-import { WalletCard } from '../../components/WalletCard';
-import { ProjectCard } from '../../components/ProjectCard';
+import { TransactionList } from '../components/TransactionList';
+import { WalletCard } from '../components/WalletCard';
+import { ProjectCard } from '../components/ProjectCard';
 import { useLedgerStore } from '../store/ledgerStore';
 import { Activity, Search } from 'lucide-react';
+
+
+interface Transaction {
+  id: string;
+  type: Transaction;
+  status: 'completed' | 'pending';
+  amount: number;
+  fromAddress?: string;
+  toAddress: string;
+  timestamp: Date;
+  projectId?: string;
+  userId: string;
+  walletAddress: string;
+}
+
+interface TransactionListProps {
+  transactions: Transaction[];
+}
 
 // Mock data for demonstration
 const mockWallet = {
