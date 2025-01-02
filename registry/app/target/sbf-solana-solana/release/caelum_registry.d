@@ -1,0 +1,1 @@
+/Users/artimus100/Desktop/github/caelumx-registry/caelum-registry/target/sbf-solana-solana/release/caelum_registry.so: /Users/artimus100/Desktop/github/caelumx-registry/caelum-registry/programs/caelum-registry/src/lib.rs

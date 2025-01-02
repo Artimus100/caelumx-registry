@@ -24,6 +24,12 @@ export function Navbar() {
             <Link href="/status">
               <Button variant="ghost">Check Status</Button>
             </Link>
+            <Link href="/ledger">
+          <Button className="w-full sm:w-auto" size="lg">
+            <img src={Logo.src} alt="Logo" className="mr-2 h-5 w-5" />
+              Ledger
+            </Button>
+          </Link>
           </div>
         </div>
       </div>

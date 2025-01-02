@@ -1,0 +1,297 @@
+{
+  "address": "2mg8v3Nxu1yzjjHbhX84jiSkfX2jBZcojTP4hgyNeLGa",
+  "metadata": {
+    "name": "caelum_registry",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "add_project",
+      "discriminator": [
+        97,
+        192,
+        178,
+        11,
+        126,
+        16,
+        196,
+        5
+      ],
+      "accounts": [
+        {
+          "name": "registry_account",
+          "writable": true
+        },
+        {
+          "name": "verifier",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "project_type",
+          "type": "string"
+        },
+        {
+          "name": "region",
+          "type": "string"
+        },
+        {
+          "name": "vintage_year",
+          "type": "u16"
+        },
+        {
+          "name": "certification_body",
+          "type": "string"
+        },
+        {
+          "name": "credit_amount",
+          "type": "u64"
+        },
+        {
+          "name": "ipfs_hash",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "initialize_registry",
+      "discriminator": [
+        189,
+        181,
+        20,
+        17,
+        174,
+        57,
+        249,
+        59
+      ],
+      "accounts": [
+        {
+          "name": "registry_account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "update_credit_status",
+      "discriminator": [
+        123,
+        91,
+        69,
+        184,
+        177,
+        147,
+        96,
+        198
+      ],
+      "accounts": [
+        {
+          "name": "registry_account",
+          "writable": true
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "project_index",
+          "type": "u32"
+        },
+        {
+          "name": "new_status",
+          "type": {
+            "defined": {
+              "name": "ProjectStatus"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "verify_project",
+      "discriminator": [
+        185,
+        69,
+        182,
+        89,
+        5,
+        45,
+        19,
+        179
+      ],
+      "accounts": [
+        {
+          "name": "registry_account",
+          "writable": true
+        },
+        {
+          "name": "verifier",
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "project_index",
+          "type": "u32"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "RegistryAccount",
+      "discriminator": [
+        113,
+        93,
+        106,
+        201,
+        100,
+        166,
+        146,
+        98
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InvalidProjectName",
+      "msg": "Invalid project name"
+    },
+    {
+      "code": 6001,
+      "name": "InvalidCreditAmount",
+      "msg": "Invalid credit amount"
+    },
+    {
+      "code": 6002,
+      "name": "InvalidIPFSHash",
+      "msg": "Invalid IPFS hash"
+    },
+    {
+      "code": 6003,
+      "name": "InvalidStatusTransition",
+      "msg": "Invalid status transition"
+    },
+    {
+      "code": 6004,
+      "name": "ProjectNotFound",
+      "msg": "Project not found"
+    }
+  ],
+  "types": [
+    {
+      "name": "CarbonProject",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "project_type",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "vintage_year",
+            "type": "u16"
+          },
+          {
+            "name": "certification_body",
+            "type": "string"
+          },
+          {
+            "name": "verifier",
+            "type": "pubkey"
+          },
+          {
+            "name": "credit_amount",
+            "type": "u64"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "ProjectStatus"
+              }
+            }
+          },
+          {
+            "name": "ipfs_hash",
+            "type": "string"
+          },
+          {
+            "name": "mint_address",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProjectStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Available"
+          },
+          {
+            "name": "Traded"
+          },
+          {
+            "name": "Retired"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RegistryAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "projects",
+            "type": {
+              "vec": {
+                "defined": {
+                  "name": "CarbonProject"
+                }
+              }
+            }
+          },
+          {
+            "name": "authority",
+            "type": "pubkey"
+          }
+        ]
+      }
+    }
+  ]
+}

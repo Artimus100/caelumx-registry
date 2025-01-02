@@ -1,0 +1,10 @@
+/Users/artimus100/Desktop/github/caelumx-registry/caelum-registry/target/debug/deps/libcargo_toml-e3e55c918cfd175c.rmeta: /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/cargo_toml.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/afs.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/error.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/inheritable.rs
+
+/Users/artimus100/Desktop/github/caelumx-registry/caelum-registry/target/debug/deps/libcargo_toml-e3e55c918cfd175c.rlib: /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/cargo_toml.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/afs.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/error.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/inheritable.rs
+
+/Users/artimus100/Desktop/github/caelumx-registry/caelum-registry/target/debug/deps/cargo_toml-e3e55c918cfd175c.d: /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/cargo_toml.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/afs.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/error.rs /Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/inheritable.rs
+
+/Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/cargo_toml.rs:
+/Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/afs.rs:
+/Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/error.rs:
+/Users/artimus100/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cargo_toml-0.19.2/src/inheritable.rs:

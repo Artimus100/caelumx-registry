@@ -80,3 +80,65 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Reset input elements */
+input {
+  all: unset; /* Reset everything */
+}
+
+input:focus,
+input:active {
+  outline: none; /* Remove focus ring */
+  box-shadow: none; /* Remove focus shadow */
+  border: none; /* Ensure no border changes */
+}
+input[type="checkbox"]:checked::before {
+    content: "✔"; /* Unicode or custom tick */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem; /* Adjust as needed */
+}
+
+/* Apply a global font */
+*, body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Remove the default background */
+select {
+    background: none;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+option{
+
+    color: #212;
+}
+
+@layer base {
+  Custom Scrollbar Styles
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    height: 0; /* Remove scrollbar height */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* No background for track */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent; /* No background for thumb */
+    border: none; /* Remove thumb border */
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  }
+}
