@@ -3,11 +3,11 @@ import React from 'react';
 import { format } from 'date-fns';
 import { Tag, Clock, CreditCard } from 'lucide-react';
 import type { CreditListing } from '../../hooks/useTrading';
-import { useWallet } from '../../hooks/usewallet';
+import { useWallet } from '../../hooks/useWallet';
 
 interface ListingCardProps {
   listing: CreditListing;
-  project: CreditProject;
+  project: any;
   onBuy: () => void;
 }
 
