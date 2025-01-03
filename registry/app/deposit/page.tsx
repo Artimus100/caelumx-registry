@@ -17,7 +17,7 @@ export default function Deposit  ()  {
   };
 
   const [step, setStep] = useState(1);
-  const [lable, setLable] = useState('Deposite')
+  const [lable, setLable] = useState('Deposit')
 
  function handelClick() {
     setStep(2)

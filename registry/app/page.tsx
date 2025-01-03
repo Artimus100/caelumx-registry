@@ -33,6 +33,12 @@ export default function Home() {
               Check Status
             </Button>
           </Link>
+          <Link href="/deposit">
+            <Button className="w-full sm:w-auto" size="lg">
+            <img src={Logo.src} alt="Logo" className="mr-2 h-5 w-5" />
+            Deposit Credits 
+            </Button>
+          </Link>
 
         </div>
       </div>
