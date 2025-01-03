@@ -56,8 +56,8 @@ className={`flex border-[1px] p-5 pt-3 ${
       animate={step === 2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       style={{ display: step === 2 ? 'flex' : 'none' }} // Hide completely when step !== 2
-             className='inline-flex w-fit px-2 pr-4 m-auto mb-2 p-1 gap-2 items-center justify-center bg-teal-700/10 rounded-full'>
-                <img className='size-5' src={TickIcon.src} alt="Tick Symbol" />
+             className='inline-flex w-fit size-8 px-2 pr-4 m-auto mb-2 p-1 gap-2 items-center justify-center bg-teal-700/10 rounded-full'>
+                <img className='h-6' src={TickIcon.src} alt="Tick Symbol" />
                 <h5 className="text-[10px] text-teal-600">The Project ahs been successfully deployed on the solana devNet</h5>
             </motion.div>
           {Object.entries(project).map(([key, value]) => (
