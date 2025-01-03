@@ -3,6 +3,7 @@ import Sol from '../../public/icons/Solana.svg'
 import Credit from '../../public/icons/CreditIcon.svg'
 import { easeOut, motion } from 'framer-motion'
 import { ComponentPropsWithoutRef } from 'react'
+import { Link } from 'lucide-react'
 
 
 
@@ -14,10 +15,12 @@ export const Card   = (props : ComponentPropsWithoutRef<'div'> & {
     p_sdg_goals ?: number,
     p_credits ?: number,
     p_vintage_year ?: number
+    link?: string
 }  ) => {
 
-    const { p_name, p_type, p_country, p_cost, p_sdg_goals, p_credits, p_vintage_year } = props
+    const { p_name, p_type, p_country, p_cost, p_sdg_goals, p_credits, p_vintage_year, link } = props
     return (
+        <a href={link}>
         <motion.div
         initial={{
             color:'#d4d4d8',
@@ -75,5 +78,6 @@ export const Card   = (props : ComponentPropsWithoutRef<'div'> & {
                 </div>
             </div>
         </motion.div>
+        </a>
     )
 }
