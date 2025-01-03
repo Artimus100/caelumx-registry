@@ -4,7 +4,6 @@ export const projects = [
     p_type: "Peatland Conservation",
     p_country: "Indonesia",
     p_cost: 10,
-    p_sdg_goals: [13, 15],
     p_credits: 1000000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/VCS-674"
@@ -14,7 +13,6 @@ export const projects = [
     p_type: "Jegurupadu, India",
     p_country: "India",
     p_cost: 12,
-    p_sdg_goals: [13, 15],
     p_credits: 800000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/VCS-982"
@@ -24,7 +22,6 @@ export const projects = [
     p_type: "Forest Conservation",
     p_country: "Zimbabwe",
     p_cost: 8,
-    p_sdg_goals: [13, 15],
     p_credits: 500000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/kariba-redd-plus-project"
@@ -34,7 +31,6 @@ export const projects = [
     p_type: "Forest Conservation",
     p_country: "Peru",
     p_cost: 9,
-    p_sdg_goals: [13, 15],
     p_credits: 600000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/cordillera-azul-national-park-redd-project"
@@ -44,7 +40,6 @@ export const projects = [
     p_type: "Renewable Energy",
     p_country: "India",
     p_cost: 7,
-    p_sdg_goals: [7, 13],
     p_credits: 400000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/200mw-wind-power-project-in-tamil-nadu"
@@ -53,7 +48,6 @@ export const projects = [
     p_type: "Biochar Production",
     p_country: "Germany",
     p_cost: 50,
-    p_sdg_goals: 13,
     p_credits: 100,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/PUR-175613"
@@ -63,7 +57,6 @@ export const projects = [
     p_type: "Cookstove Distribution",
     p_country: "Guatemala",
     p_cost: 16.48,
-    p_sdg_goals: 3,
     p_credits: 200,
     p_vintage_year: 2022,
     link: "https://www.cooleffect.org/projects/breath-of-fresh-air"
@@ -73,7 +66,6 @@ export const projects = [
     p_type: "Forestry Conservation",
     p_country: "Mexico",
     p_cost: 15.38,
-    p_sdg_goals: 15,
     p_credits: 300,
     p_vintage_year: 2024,
     link: "https://www.cooleffect.org/projects/seeing-the-forest-for-the-trees"
@@ -83,7 +75,6 @@ export const projects = [
     p_type: "Blue Carbon Restoration",
     p_country: "Myanmar",
     p_cost: 38.27,
-    p_sdg_goals: 14,
     p_credits: 150,
     p_vintage_year: 2023,
     link: "https://www.cooleffect.org/projects/sea-of-change"
@@ -93,7 +84,6 @@ export const projects = [
     p_type: "Renewable Energy",
     p_country: "India",
     p_cost: 10.99,
-    p_sdg_goals: 7,
     p_credits: 250,
     p_vintage_year: 2023,
     link: "https://www.cooleffect.org/projects/a-bright-idea"
@@ -102,7 +92,6 @@ export const projects = [
     p_type: "Peatland Conservation",
     p_country: "Indonesia",
     p_cost: 10,
-    p_sdg_goals: [13, 15],
     p_credits: 1000000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/rimba-raya-biodiversity-reserve-project"
@@ -112,7 +101,6 @@ export const projects = [
     p_type: "Peatland Conservation",
     p_country: "Indonesia",
     p_cost: 12,
-    p_sdg_goals: [13, 15],
     p_credits: 800000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/katingan-peatland-conservation-project"
@@ -122,7 +110,6 @@ export const projects = [
     p_type: "Forest Conservation",
     p_country: "Zimbabwe",
     p_cost: 8,
-    p_sdg_goals: [13, 15],
     p_credits: 500000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/kariba-redd-plus-project"
@@ -132,7 +119,6 @@ export const projects = [
     p_type: "Forest Conservation",
     p_country: "Peru",
     p_cost: 9,
-    p_sdg_goals: [13, 15],
     p_credits: 600000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/cordillera-azul-national-park-redd-project"
@@ -142,7 +128,6 @@ export const projects = [
     p_type: "Renewable Energy",
     p_country: "India",
     p_cost: 7,
-    p_sdg_goals: [7, 13],
     p_credits: 400000,
     p_vintage_year: 2023,
     link: "https://app.carbonmark.com/projects/200mw-wind-power-project-in-tamil-nadu"
@@ -151,7 +136,6 @@ export const projects = [
     p_type: "Biochar Production",
     p_country: "Germany",
     p_cost: 50,
-    p_sdg_goals: 13,
     p_credits: 100,
     p_vintage_year: 2023,
     link: "https://www.cooleffect.org/projects/bavarian-biochar"
@@ -161,7 +145,6 @@ export const projects = [
     p_type: "Cookstove Distribution",
     p_country: "Guatemala",
     p_cost: 16.48,
-    p_sdg_goals: 3,
     p_credits: 200,
     p_vintage_year: 2022,
     link: "https://www.cooleffect.org/projects/breath-of-fresh-air"

@@ -7,18 +7,19 @@ import { Link } from 'lucide-react'
 
 
 
+
+
 export const Card   = (props : ComponentPropsWithoutRef<'div'> & {
     p_name ?: string,
     p_type ?: string,
     p_country ?: string,
     p_cost ?: number,
-    p_sdg_goals ?: number,
     p_credits ?: number,
     p_vintage_year ?: number
     link?: string
 }  ) => {
 
-    const { p_name, p_type, p_country, p_cost, p_sdg_goals, p_credits, p_vintage_year, link } = props
+    const { p_name, p_type, p_country, p_cost, p_credits, p_vintage_year, link } = props
     return (
         <a href={link}>
         <motion.div
@@ -56,10 +57,7 @@ export const Card   = (props : ComponentPropsWithoutRef<'div'> & {
                 <div>
                     <div className=' bg-teal-500/20 inline-flex gap-[2px] pb-0.5  items-center justify-center  px-1  py-0.5 rounded-full outline outline-[1px] outline-teal-800/40'>
 
-                            <div className='size-[10px] inline-flex items-center justify-center rounded-full  bg-teal-800'>
-                                <h5 className='numeber text-[5px] font-medium text-zinc-200'>{p_sdg_goals}</h5>
-                            </div>
-                            <h3 className='text-[8px] '>SDGs</h3>
+
 
                     </div>
                 </div>
