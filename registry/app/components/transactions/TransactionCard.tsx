@@ -32,13 +32,13 @@ export function TransactionCard({ transaction }: TransactionCardProps) {
           {format(transaction.timestamp, 'PPp')}
         </span>
       </div>
-      
+
       <div className="space-y-1">
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Amount</span>
           <span className="font-mono">{transaction.amount} Credits</span>
         </div>
-        
+
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Status</span>
           <span className={`
@@ -54,7 +54,7 @@ export function TransactionCard({ transaction }: TransactionCardProps) {
             {transaction.status}
           </span>
         </div>
-        
+
         {transaction.blockchainHash && (
           <div className="flex justify-between text-sm">
             <span className="text-gray-600">TX Hash</span>

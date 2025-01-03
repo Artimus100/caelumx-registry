@@ -70,15 +70,15 @@ export function TransactionList({ transactions }: TransactionListProps) {
   });
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
+    <div className="overflow-x-auto ">
+      <table className="min-w-full  divide-y divide-zinc-500/40 ">
+        <thead className="">
           {table.getHeaderGroups().map((headerGroup: { id: React.Key | null | undefined; headers: any[]; }) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header: { id: React.Key | null | undefined; column: { columnDef: { header: any; }; }; getContext: () => any; }) => (
                 <th
                   key={header.id}
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  className="px-6 py-3 text-left text-xs font-medium text-teal-600 uppercase tracking-wider"
                 >
                   {flexRender(
                     header.column.columnDef.header,
@@ -89,7 +89,7 @@ export function TransactionList({ transactions }: TransactionListProps) {
             </tr>
           ))}
         </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
+        <tbody className="bg-zinc-700/10 divide-y divide-zinc-600/20">
           {table.getRowModel().rows.map((row: { id: React.Key | null | undefined; getVisibleCells: () => any[]; }) => (
             <tr key={row.id}>
               {row.getVisibleCells().map((cell: { id: React.Key | null | undefined; column: { columnDef: { cell: any; }; }; getContext: () => any; }) => (
