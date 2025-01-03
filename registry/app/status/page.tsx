@@ -12,6 +12,7 @@ import {
 } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { Search } from "lucide-react";
+import Link from "next/link";
 
 export default function StatusPage() {
   const [projectId, setProjectId] = useState("");
@@ -24,7 +25,7 @@ export default function StatusPage() {
     setProjectDetails({
       id: projectId,
       projectName: "Sample Project",
-      status: "pending",
+      status: "APPROVED",
       submissionDate: "2024-03-20",
       lastUpdated: "2024-03-21",
       type: "Reforestation",
@@ -53,6 +54,12 @@ export default function StatusPage() {
             <Search className="mr-2 h-4 w-4" />
             Search
           </Button>
+          <Link href="/deposit">
+          <Button type="submit">
+            Deposit
+          </Button>
+          </Link>
+          
         </form>
 
         {projectDetails && (
